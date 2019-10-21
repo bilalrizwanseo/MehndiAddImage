@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MehndiAddImage</string>
+
+    <!--for spinner-->
+    <array name="mehndi">
+        <item>Select Category</item>
+        <item>feet</item>
+        <item>palm</item>
+        <item>arms</item>
+        <item>upperhand</item>
+    </array>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddImageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/select_menu_image"
+                android:layout_width="320dp"
+                android:layout_height="460dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher_image" />
+
+            <Spinner
+                android:id="@+id/spinnerCategories"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_menu_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:entries="@array/mehndi"></Spinner>
+
+            <Button
+                android:id="@+id/add_new_image"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerCategories"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Add Image"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
